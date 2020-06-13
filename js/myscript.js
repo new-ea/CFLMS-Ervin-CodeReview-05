@@ -1,5 +1,7 @@
 // parsing the data from JSON file
 const movieData = JSON.parse(movieInfos);
+
+// Added swiper from https://swiperjs.com
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
@@ -19,7 +21,7 @@ var swiper = new Swiper('.swiper-container', {
 
 $(document).ready(function(){
 
-    // Loop for reading the data form the parsed json file
+    // Loop for reading the data form the parsed JSON file
     for ( let i = 0; i < movieData.length; i++) {
         const movieName = movieData[i].movie;
         const movieYear = movieData[i].year;
@@ -97,7 +99,7 @@ $(document).ready(function(){
         })
     }
 
-    // //Sorting the divs by number of likes
+    //Sorting the divs by number of likes
     var $wrapper = $(".movieContainer");
     $("#sortBtn").on("click", function(){
         $wrapper.find(".movieBox").sort(function (a, b) {

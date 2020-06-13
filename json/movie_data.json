@@ -1,0 +1,111 @@
+var movieInfos = 
+	`[
+    {
+      "movie": "Black Widow",
+      "year": "Oktober 2020",
+      "production": "USA",
+      "image": "img/BlackWidow.jpg",
+      "actors": "Scarlett Johansson, Florence Pugh",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/ybji16u608U"
+    },
+    {
+      "movie": "Avengers: Endgame",
+      "year": "April 2019",
+      "production": "USA",
+      "image": "img/avengersEndgame.jpg",
+      "actors": "Robert Downey Jr., Chris Hemsworth, Chris Evans",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/TcMBFSGVi1c"
+    },
+    {
+      "movie": "Spider Man: Far from Home",
+      "year": "July 2019",
+      "production": "USA",
+      "image": "img/SpiderMan.jpg",
+      "actors": "Tom Holland, Jake Gyllenhaal",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/Nt9L1jCKGnE"
+    },
+    {
+      "movie": "Black Panther",
+      "year": "February 2018",
+      "production": "USA",
+      "image": "img/BlackPanther.png",
+      "actors": "Chadwick Boseman, Michael B. Jordan",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/xjDjIWPwcPU"
+    },
+    {
+      "movie": "Avengers: Infinity War",
+      "year": "April 2018",
+      "production": "USA",
+      "image": "img/infinityWar.jpg",
+      "actors": "Robert Downey Jr., Chris Hemsworth, Chris Evans",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8"
+    },
+    {
+      "movie": "Thor: Ragnarok",
+      "year": "Oktober 2017",
+      "production": "USA",
+      "image": "img/ThorRagnarok.jpg",
+      "actors": "Chris Hemsworth, Tom Hiddleston",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/ue80QwXMRHg"
+    },
+    {
+      "movie": "Guardians of the Galaxy 2",
+      "year": "April 2017",
+      "production": "USA",
+      "image": "img/Guardians2.jpg",
+      "actors": "Chris Pratt, Zoe Saldana",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/dW1BIid8Osg"
+    },
+    {
+      "movie": "The first Avenger: Civil War",
+      "year": "April 2016",
+      "production": "USA",
+      "image": "img/CivilWar.jpg",
+      "actors": "Chris Evans, Robert Downey junior, Scarlett Johansson",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/FkTybqcX-Yo?list=TLPQMTMwNjIwMjDttyJxrhvVww"
+    },
+    {
+      "movie": "Doctor Strange",
+      "year": "Oktober 2016",
+      "production": "USA",
+      "image": "img/DoctorStrange.jpg",
+      "actors": "Benedict Cumberbatch, Tilda Swinton",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/HSzx-zryEgM?list=TLPQMTMwNjIwMjDttyJxrhvVww"
+    },
+    {
+      "movie": "Avengers: Age of Ultron",
+      "year": "Mai 2015",
+      "production": "USA",
+      "image": "img/Ultron.jpg",
+      "actors": "Robert Downey Jr., Chris Hemsworth, Chris Evans",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/tmeOjFno6Do?list=TLPQMTMwNjIwMjDttyJxrhvVww"
+    },
+    {
+      "movie": "Captain Marvel",
+      "year": "April 2019",
+      "production": "USA",
+      "image": "img/captainMarvel.jpg",
+      "actors": "Brie Larson., Samuel L. Jackson",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/Z1BCujX3pw8"
+    },
+    {
+      "movie": "Deadpool 2",
+      "year": "Oktober 2018",
+      "production": "USA",
+      "image": "img/Deadpool.jpg",
+      "actors": "Ryan Reynolds., Josh Brolin",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
+      "trailer": "https://www.youtube.com/embed/D86RtevtfrA"
+    }
+]`

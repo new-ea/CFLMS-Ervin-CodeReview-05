@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenger Movies</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <!-- json file -->
+    <script src="json/movie_data.json"></script>
+</head>
+<body>
+    <header class="mainHeader">
+        <h1>Movie Factory</h1>
+    </header>
+
+    <section class="linkHeader">
+        <h3>Welcome to the World of MARVEL</h3>
+    </section>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(./img/SpiderMan.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/avengersEndgame.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/BlackWidow.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/captainMarvel.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/CivilWar.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/Deadpool.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/DoctorStrange.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/Guardians2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/infinityWar.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(./img/ThorRagnarok.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <div class="btnBox">
+        <input id="sortBtn" type="button" value="Sort by Likes">
+    </div>
+    <p class="infos">*click on movie image to see further info</p>
+    <!-- box for movie cards -->
+    <div class="movieContainer">
+
+    </div>
+
+    <footer>
+        <h1>Movie Factory</h1>
+    </footer>
+<!-- jquery CDN  -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- JS file -->
+<script src="js/myscript.js"></script>
+</body>
+</html>
